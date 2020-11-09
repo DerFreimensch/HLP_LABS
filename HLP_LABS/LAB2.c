@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <locale.h>
 FILE* file;
 FILE* file1;
 char line1[1024];
@@ -28,7 +27,6 @@ void read() {
 	}
 }
 int main(void) {
-	setlocale(LC_ALL, "Rus");
 	fopen_s(&file, "file.txt", "r+t");
 	fopen_s(&file1, "file1.txt", "w+t");
 	read();
