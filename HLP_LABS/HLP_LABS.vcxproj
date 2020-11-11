@@ -141,10 +141,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="LAB2.c" />
+    <ClCompile Include="Lab3_9.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="file.txt" />
     <Text Include="file1.txt" />
+    <Text Include="help.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -13,18 +13,30 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Исходные файлы\Lab2">
+      <UniqueIdentifier>{2c6df63d-d8f2-4090-a2b8-878a6d385233}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Lab3">
+      <UniqueIdentifier>{a02c1da9-af39-4396-8e40-9eef8e9f56ac}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="file1.txt">
+      <Filter>Исходные файлы\Lab2</Filter>
+    </Text>
+    <Text Include="file.txt">
+      <Filter>Исходные файлы\Lab2</Filter>
+    </Text>
+    <Text Include="help.txt">
+      <Filter>Исходные файлы\Lab3</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LAB2.c">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Исходные файлы\Lab2</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="file.txt">
-      <Filter>Исходные файлы</Filter>
-    </Text>
-    <Text Include="file1.txt">
-      <Filter>Исходные файлы</Filter>
-    </Text>
+    <ClCompile Include="Lab3_9.cpp">
+      <Filter>Исходные файлы\Lab3</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
