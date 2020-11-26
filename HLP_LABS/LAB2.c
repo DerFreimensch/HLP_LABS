@@ -1,4 +1,4 @@
-#include <stdio.h>
+/*#include <stdio.h>
 FILE* file;
 FILE* file1;
 char line1[1024];
@@ -33,4 +33,4 @@ int main(void) {
 	fclose(file);
 	fclose(file1);
 	return 0;
-}
+}*/
