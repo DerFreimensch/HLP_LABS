@@ -1,7 +1,11 @@
-#include <stdio.h>
+#include <iostream>
+#include <fstream>
+#include <string>
+using namespace std;
 FILE* file;
 char exe[26] = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
-char line[1024], * symbol;
+char * symbol;
+char line[1024];
 int dictionary[26];
 int numOfLetters = 1;
 void choose();
@@ -9,7 +13,7 @@ void read();
 void sort();
 
 int main(void) {
-	fopen_s(&file, "help.txt", "r+t");
+	
 	for (int i = 0; i < 26; i++) {
 		dictionary[i] = 1;
 	}
@@ -19,12 +23,15 @@ int main(void) {
 	}
 	
 	
-	fclose(file);
+	
 
 }
 void read() {
-	while (!feof(file)) {
-		symbol = fgets(line, 1024, file);
+	ifstream file;
+	file.open("help.txt");
+	while (!file.eof()) {
+		file.getline(line , 1024);
+		symbol = line;
 		while (*symbol != '\0') {
 			if (*symbol == NULL) {
 				break;
@@ -40,6 +47,7 @@ void read() {
 
 		}
 	}
+	file.close();
 }
 
 void sort() {

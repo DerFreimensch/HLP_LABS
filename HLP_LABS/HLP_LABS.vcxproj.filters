@@ -42,7 +42,7 @@
       <Filter>Исходные файлы\Lab3</Filter>
     </ClCompile>
     <ClCompile Include="Lab4_9.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Исходные файлы\Lab4</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
