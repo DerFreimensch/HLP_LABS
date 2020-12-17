@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 #include <fstream>
 #include <string>
 using namespace std;
@@ -19,7 +19,7 @@ int main(void) {
 	}
 	choose();
 	for (int i = 0; i < 26; i++) {
-		printf ("%c %d\n", exe[i], dictionary [i]);
+		cout << exe[i] << ' '  << dictionary [i] << endl;
 	}
 	
 	
@@ -68,10 +68,10 @@ void sort() {
 
 void choose() {
 	int turn;
-	printf("In what order do you want to display the dictionary: \n");
-	printf("1) Alphabetical \n");
-	printf("2) Frequency\n");
-	scanf_s("%d", &turn);
+	cout << "In what order do you want to display the dictionary: " << endl;
+	cout << "1) Alphabetical " << endl;
+	cout << "2) Frequency " << endl;
+	cin >> turn;
 	switch (turn){
 		case 1:
 			read();
@@ -81,4 +81,4 @@ void choose() {
 			sort();
 			break;
 	}
-}
+}*/
